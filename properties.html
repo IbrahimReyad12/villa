@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>VILLA</title>
+
+  <!-- =======================
+        Google Fonts
+  ======================= -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- =======================
+        Swiper
+  ======================= -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- =======================
+        Bootstrap
+  ======================= -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- =======================
+        Fontawosome CSS File
+  ======================= -->
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <!-- =======================
+        Normalize CSS File
+  ======================= -->
+  <link rel="stylesheet" href="css/normalize.css" />
+
+  <!-- =======================
+        Main CSS File
+  ======================= -->
+  <link rel="stylesheet" href="css/master.css" />
+</head>
+<style>
+  .nav-pills .nav-link {
+    background-color: #1e1e1e !important;
+    color: #fff;
+    margin: 0 5px;
+    transition: 0.3s;
+    padding: 12px 25px;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .nav-pills .nav-link:hover {
+    color: #f35525;
+  }
+
+  @media (max-width:992px) {
+    .nav-pills .nav-link {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    .nav-pills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .nav-pills .nav-link.active {
+    background-color: #f35525 !important;
+    color: #fff;
+  }
+
+  .nav-pills {
+    justify-content: center;
+  }
+</style>
+
+<body>
+  <!-- =======================
+        Start Loader
+      ======================= -->
+  <div id="loader">
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <!-- =======================
+        End Loader
+      ======================= -->
+  <!-- =======================
+        Start Sub Header
+      ======================= -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <ul class="info d-flex list-unstyled">
+            <li class=" me-5"><i class="fa fa-envelope me-2 icon-info"></i>
+              info@company.com
+            </li>
+            <li class="sun">
+              <i class="fas fa-map me-2 icon-info"></i>
+              Sunny Isles Beach, FL 33160
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-md-4">
+          <ul class="social-links list-unstyled m-0">
+
+            <li><a href=""><i class="fab fa-facebook-f me-5 icon"></i></a></li>
+            <li><a href=""><i class="fab fa-x-twitter me-5 icon"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin-in me-5 icon"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram icon"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- =======================
+        End Sub Header
+       ======================= -->
+
+  <!-- =======================
+        Start Header
+       ======================= -->
+  <header id="mainHeader" class="py-4 sticky-top bg-white shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <a href="index.html" class="fs-1 fw-bold">VILLA</a>
+      </div>
+
+      <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar">
+        <i class="fa fa-bars fs-2"></i>
+      </button>
+
+      <nav class="d-none d-lg-block">
+        <ul class="d-flex justify-content-between align-content-center">
+          <li><a href="index.html" class="me-2 me-md-4 fs-5 ">Home</a></li>
+          <li><a href="properties.html" class="me-2 me-md-4 fs-5">Properties</a></li>
+          <li><a href="property-details.html" class="me-2 me-md-4 fs-5">Property Details</a></li>
+          <li><a href="contact.html" class="me-2 me-md-4 fs-5">Contact Us</a></li>
+          <li class="ms-5 fs-5"><a href="#" class="button"><i class="fa fa-calendar me-3 calendar"></i> Schedule a
+              visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas-header shadow-sm">
+      <h5 class="offcanvas-title fs-3">VILLA</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
+        <li class="nav-item"><a class="nav-link" href="property-details.html">Property Details</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item mt-3">
+          <a class="btn btn-primary w-100" href="#"><i class="fa fa-calendar me-2"></i>Schedule a Visit</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- =======================
+        End Header
+       ======================= -->
+  <main>
+    <!-- =======================
+         Start Hero
+       ======================= -->
+    <section class="hero-propertie position-relative ">
+      <div class="content-hero">
+        <h3 class="propertie-pabilc">
+          <a href="#">Home</a>
+          / Properties
+        </h3>
+
+        <h1>Properties</h1>
+      </div>
+    </section>
+    <!-- =======================
+         End Hero
+       ======================= -->
+    <!-- =======================
+         Start  Properties Section
+       ======================= -->
+    <section class="properties-section">
+      <div class="container">
+
+        <!-- Navigation Pills -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item rounded bg-transparent" role="presentation">
+            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+              type="button" role="tab">All Show</button>
+          </li>
+          <li class="nav-item me-3 mb-lg-0 mb-3" role="presentation">
+          <li class="nav-item rounded bg-transparent me-3 mb-lg-0 mb-3" role="presentation">
+            <button class="nav-link" id="pills-apartment-tab" data-bs-toggle="pill" data-bs-target="#pills-apartment"
+              type="button" role="tab">Apartment</button>
+          </li>
+          <li class="nav-item rounded bg-transparent me-3 mb-lg-0 mb-3" role="presentation">
+            <button class="nav-link" id="pills-villa-tab" data-bs-toggle="pill" data-bs-target="#pills-villa"
+              type="button" role="tab">Villa House</button>
+          </li>
+          <li class="nav-item rounded bg-transparents" role="presentation">
+            <button class="nav-link" id="pills-penthouse-tab" data-bs-toggle="pill" data-bs-target="#pills-penthouse"
+              type="button" role="tab">Penthouse</button>
+          </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-all" role="tabpanel">
+            <div class="wrapper pt-5 mt-2">
+              <div class="box-card p-4">
+                <img src="images/property-01.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Luxury Villa</span>
+                  <p>$2.264.000</p>
+                </div>
+                <h4 class="text-start fw-bold">18 New Street Miami, OR 97219</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">8</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">8</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">545m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">6 spots</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+              <div class="box-card p-4">
+                <img src="images/property-02.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Luxury Villa</span>
+                  <p>$1.180.000</p>
+                </div>
+                <h4 class="text-start fw-bold">54 Mid Street Florida, OR 27001</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">6</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">5</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">450m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">8 spots</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+              <div class="box-card p-4">
+                <img src="images/property-03.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Luxury Villa</span>
+                  <p>$1.460.000</p>
+                </div>
+                <h4 class="text-start fw-bold">26 Old Street Miami, OR 38540</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">5</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">225m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">10 spots</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+              <div class="box-card p-4">
+                <img src="images/property-04.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Apartment</span>
+                  <p>$584.500</p>
+                </div>
+                <h4 class="text-start fw-bold">12 New Street Miami, OR 12650</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">125m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">25th</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">2 cars</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+              <div class="box-card p-4">
+                <img src="images/property-05.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Penthouse</span>
+                  <p>$925.600</p>
+                </div>
+                <h4 class="text-start fw-bold">34 Beach Street Miami, OR 42680</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">180m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">38th</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2"> 2 cars</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+              <div class="box-card p-4">
+                <img src="images/property-06.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Modern Condo</span>
+                  <p>$450.000</p>
+                </div>
+                <h4 class="text-start fw-bold">22 New Street Portland, OR 16540</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">2</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">165m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">26th</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">3 cars</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pills-apartment" role="tabpanel">
+            <div class="wrapper pt-5 mt-2">
+
+              <div class="box-card p-4">
+                <img src="images/property-04.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Apartment</span>
+                  <p>$584.500</p>
+                </div>
+                <h4 class="text-start fw-bold">12 New Street Miami, OR 12650</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">125m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">25th</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">2 cars</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+              <div class="box-card p-4">
+                <img src="images/property-05.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Penthouse</span>
+                  <p>$925.600</p>
+                </div>
+                <h4 class="text-start fw-bold">34 Beach Street Miami, OR 42680</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">180m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">38th</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2"> 2 cars</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+              <div class="box-card p-4">
+                <img src="images/property-06.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Modern Condo</span>
+                  <p>$450.000</p>
+                </div>
+                <h4 class="text-start fw-bold">22 New Street Portland, OR 16540</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">2</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">165m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">26th</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">3 cars</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-villa" role="tabpanel">
+            <div class="wrapper pt-5 mt-2">
+              <div class="box-card p-4">
+                <img src="images/property-04.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Apartment</span>
+                  <p>$584.500</p>
+                </div>
+                <h4 class="text-start fw-bold">12 New Street Miami, OR 12650</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">125m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">25th</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">2 cars</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+              <div class="box-card p-4">
+                <img src="images/property-05.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Penthouse</span>
+                  <p>$925.600</p>
+                </div>
+                <h4 class="text-start fw-bold">34 Beach Street Miami, OR 42680</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">180m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">38th</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2"> 2 cars</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+              <div class="box-card p-4">
+                <img src="images/property-06.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Modern Condo</span>
+                  <p>$450.000</p>
+                </div>
+                <h4 class="text-start fw-bold">22 New Street Portland, OR 16540</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">2</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">165m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">26th</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">3 cars</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-penthouse" role="tabpanel">
+            <div class="wrapper pt-5 mt-2">
+              <div class="box-card p-4">
+                <img src="images/property-02.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Luxury Villa</span>
+                  <p>$1.180.000</p>
+                </div>
+                <h4 class="text-start fw-bold">54 Mid Street Florida, OR 27001</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">6</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">5</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">450m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">8 spots</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+              <div class="box-card p-4">
+                <img src="images/property-03.jpg" alt="property-01" class="img-fluid">
+                <div class="info-properties mt-4 mb-4 d-flex justify-content-between align-items-center">
+                  <span>Luxury Villa</span>
+                  <p>$1.460.000</p>
+                </div>
+                <h4 class="text-start fw-bold">26 Old Street Miami, OR 38540</h4>
+                <ul class="text-start d-flex p-0 mt-3">
+                  <li class="d-flex me-2">
+                    Bedrooms:
+                    <span class="fw-bold ms-2">5</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Bathrooms:
+                    <span class="fw-bold ms-2">4</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Area:
+                    <span class="fw-bold ms-2">225m2</span>
+                  </li>
+                </ul>
+                <ul class="text-start d-flex sup-ul">
+                  <li class="me-2 d-flex">
+                    Floor:
+                    <span class="fw-bold ms-2">3</span>
+                  </li>
+                  <li class="me-2 d-flex">
+                    Parking:
+                    <span class="fw-bold ms-2">10 spots</span>
+                  </li>
+                </ul>
+                <div class="main-button mt-4">
+                  <a href="#" class="text-white ">Schedule a visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =======================
+         End  Properties Section
+       ======================= -->
+    <!-- =======================
+         Start Footer
+       ======================= -->
+    <footer class="bg-black ">
+      <div class="container d-flex align-items-center">
+        <h5 class="m-0 py-5 text-white">Copyright © 2048 <span class="c-main">Villa</span> Agency Co., Ltd. All rights
+          reserved. Design: TemplateMo
+        </h5>
+      </div>
+    </footer>
+    <!-- =======================
+         End Footer
+       ======================= -->
+
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </main>
+  <!-- =======================
+        Main JS File
+  ======================= -->
+  <script src="js/main.js"></script>
+  <script src="js/all.min.js"></script>
+  <!-- =======================
+        BootStrap 
+  ======================= -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- =======================
+        Swipe
+  ======================= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- =======================
+        Loading 
+  ======================= -->
+    <script>
+    // Loading
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      const content = document.getElementById("content");
+
+      setTimeout(() => {
+        loader.style.opacity = "0";
+        setTimeout(() => {
+          loader.style.display = "none";
+          content.style.display = "block";
+        }, 500);
+      }, 1000); // 0.1s
+    });
+    </script>
+</body>
+
+</html>
